@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601945587551",
+    "project_id": "coba-login-8a24c",
+    "storage_bucket": "coba-login-8a24c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601945587551:android:eb3941730f682ba77280ea",
+        "android_client_info": {
+          "package_name": "com.example.cobalogin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt3lZl_qxbLSSrjoD9t73Bx5YwwhBewhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
