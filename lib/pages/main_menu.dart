@@ -1,5 +1,6 @@
 import 'package:cobalogin/pages//daftar_anggota.dart';
 import 'package:cobalogin/pages//situs_rekomendasi.dart';
+import 'package:cobalogin/pages/favorit.dart';
 import 'package:cobalogin/pages/stopwatch.dart';
 import 'package:flutter/material.dart';
 
@@ -214,7 +215,7 @@ class MainMenu extends StatelessWidget {
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(
                     builder: (context) {
-                      return StopwatchPage();
+                      return FavoritePage();
                     },
                   ));
                 },

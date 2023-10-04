@@ -18,12 +18,12 @@ class _HalamanDetailState extends State<HalamanDetail> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Halaman Detail"),
-        iconTheme: IconThemeData(color: Colors.deepOrange[700]),
-        // backgroundColor: Colors.pink,
+        iconTheme: IconThemeData(color: Colors.white),
+        backgroundColor: Colors.indigo[900],
       ),
-      backgroundColor: Colors.black12,
+      backgroundColor: Colors.grey[350],
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.deepOrange[700],
+        backgroundColor: Colors.indigo[900],
         onPressed: () {
           _launchUrl(widget.tempat.imageUrls[0]);
         },
@@ -37,11 +37,6 @@ class _HalamanDetailState extends State<HalamanDetail> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // InkWell(
-            //     onTap: () {
-            //       _launchUrl(tempat.imageUrls[0]);
-            //     },
-            //     child: Container(child: Image.network(tempat.imageUrls[0]))),
             SizedBox(
                 height: 400,
                 child: ListView.builder(
@@ -51,7 +46,7 @@ class _HalamanDetailState extends State<HalamanDetail> {
                       return Image.network(widget.tempat.imageUrls[index]);
                     })),
             SizedBox(
-              height: 10,
+              height: 8,
             ),
             Card(
               child: Padding(
@@ -64,6 +59,7 @@ class _HalamanDetailState extends State<HalamanDetail> {
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
+                        color: Colors.indigo[900],
                       ),
                     ),
                     SizedBox(height: 8),
@@ -73,7 +69,7 @@ class _HalamanDetailState extends State<HalamanDetail> {
                           widget.tempat.ticketPrice,
                           style: TextStyle(
                             fontSize: 18,
-                            color: Colors.deepOrange[700],
+                            color: Colors.deepOrange,
                           ),
                         ),
                         Text(
@@ -102,9 +98,11 @@ class _HalamanDetailState extends State<HalamanDetail> {
                               onPressed: () {
                                 String text = "";
                                 setState(() {
-                                  isFavorite = !isFavorite;
+                                  // isFavorite = !isFavorite;
+                                  widget.tempat.isFavorite =
+                                      !widget.tempat.isFavorite;
                                 });
-                                if (isFavorite == true) {
+                                if (widget.tempat.isFavorite == true) {
                                   text = "Berhasil menambahkan ke favorite";
                                 } else {
                                   text = "Berhasil menghapus ke favorite";
@@ -112,14 +110,15 @@ class _HalamanDetailState extends State<HalamanDetail> {
 
                                 SnackBar snackBar = SnackBar(
                                   content: Text(text),
-                                  backgroundColor:
-                                      (isFavorite) ? Colors.green : Colors.red,
+                                  backgroundColor: (widget.tempat.isFavorite)
+                                      ? Colors.green
+                                      : Colors.red,
                                 );
 
                                 ScaffoldMessenger.of(context)
                                     .showSnackBar(snackBar);
                               },
-                              icon: isFavorite
+                              icon: widget.tempat.isFavorite
                                   ? Icon(
                                       Icons.favorite,
                                       color: Colors.pinkAccent[400],
@@ -142,7 +141,7 @@ class _HalamanDetailState extends State<HalamanDetail> {
                 ),
               ),
             ),
-            SizedBox(height: 8),
+            // SizedBox(height: 8),
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),

@@ -76,12 +76,18 @@ class SitusRekomendasiPage extends StatelessWidget {
                                 Icons.location_pin,
                                 color: Colors.blue,
                               ),
-                              Text(place.location),
                               Text(
-                                " - ${place.openDays} (${place.openTime})",
-                                style: TextStyle(color: Colors.grey),
-                              )
+                                place.location,
+                                style: TextStyle(fontSize: 16),
+                              ),
                             ],
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text(
+                            "${place.openDays} (${place.openTime})",
+                            style: TextStyle(color: Colors.grey),
                           ),
                           SizedBox(
                             height: 20,
