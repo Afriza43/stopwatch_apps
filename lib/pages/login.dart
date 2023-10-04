@@ -12,27 +12,38 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
-  // log in button
   Future logInButton() async {
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
-      email: _emailController.text.trim(),
-      password: _passwordController.text.trim(),
-    );
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: _emailController.text.trim(),
+        password: _passwordController.text.trim(),
+      );
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          //KALAU MAU STYLING DISINI COK
+          content: Text('Login gagal. Periksa email dan password Anda.',
+              style: TextStyle(color: Colors.white)),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
             child: Column(
               children: [
-
                 Align(
-                  alignment: Alignment.centerLeft, // Gambar akan berada di kiri atas
+                  alignment: Alignment.centerLeft,
                   child: Image.asset(
                     'assets/images/main_top.png',
                     height: 150,
@@ -54,7 +65,6 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(
                   height: 50,
                 ),
-                
 
                 //email textfield
                 Padding(
@@ -69,17 +79,16 @@ class _LoginPageState extends State<LoginPage> {
                       hintText: 'Email',
                       fillColor: Colors.white,
                       filled: true,
-                      prefixIcon: 
-                      Icon(
-                        Icons.person,color: Colors.deepPurpleAccent, // Ganti warna ikon
-                          ),
-                      enabledBorder: 
-                        OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12),
-                            borderSide: BorderSide(
-                              color: Colors.deepPurpleAccent, // Ganti warna border
-                            ),
-                          ),
+                      prefixIcon: Icon(
+                        Icons.person,
+                        color: Colors.deepPurpleAccent, // Ganti warna ikon
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide(
+                          color: Colors.deepPurpleAccent, // Ganti warna border
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -101,17 +110,16 @@ class _LoginPageState extends State<LoginPage> {
                       hintText: 'Password',
                       fillColor: Colors.white,
                       filled: true,
-                      prefixIcon: 
-                      Icon(
-                        Icons.person,color: Colors.deepPurpleAccent, // Ganti warna ikon
-                          ),
-                      enabledBorder: 
-                        OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12),
-                            borderSide: BorderSide(
-                              color: Colors.deepPurpleAccent, // Ganti warna border
-                            ),
-                          ),
+                      prefixIcon: Icon(
+                        Icons.person,
+                        color: Colors.deepPurpleAccent, // Ganti warna ikon
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        borderSide: BorderSide(
+                          color: Colors.deepPurpleAccent, // Ganti warna border
+                        ),
+                      ),
                     ),
                     obscureText: true,
                   ),

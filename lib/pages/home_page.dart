@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
         title: Text(
           "Checkout",
           style: TextStyle(
-            color: Colors.purple,
+            color: Colors.indigo[900],
             fontSize: 30,
           ),
         ),
@@ -76,11 +76,12 @@ class _HomePageState extends State<HomePage> {
                               height: 40,
                               width: 40,
                               decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.grey.shade400),
+                                  border:
+                                      Border.all(color: Colors.grey.shade400),
                                   borderRadius: BorderRadius.horizontal(
                                       left: Radius.circular(8.0))),
                               child: IconButton(
-                                color: Colors.purple,
+                                color: Colors.indigo[900],
                                 onPressed: () {
                                   setState(() {
                                     jumlah++;
@@ -107,11 +108,12 @@ class _HomePageState extends State<HomePage> {
                               height: 40,
                               width: 40,
                               decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.grey.shade400),
+                                  border:
+                                      Border.all(color: Colors.grey.shade400),
                                   borderRadius: BorderRadius.horizontal(
                                       right: Radius.circular(8.0))),
                               child: IconButton(
-                                color: Colors.purple,
+                                color: Colors.indigo[900],
                                 onPressed: () {
                                   setState(() {
                                     if (jumlah > 0) {
@@ -131,7 +133,6 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-
             SizedBox(height: 20.0),
             Container(
               padding: EdgeInsets.all(16.0),
@@ -144,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(
                         fontSize: 24.0,
                         fontWeight: FontWeight.bold,
-                        color: Colors.purple,
+                        color: Colors.indigo[900],
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -205,7 +206,7 @@ class _HomePageState extends State<HomePage> {
           FirebaseAuth.instance.signOut();
         },
         child: Icon(Icons.logout),
-        backgroundColor: Colors.purpleAccent,
+        backgroundColor: Colors.indigoAccent,
       ),
     );
   }

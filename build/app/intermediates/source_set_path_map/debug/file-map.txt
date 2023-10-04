@@ -1,19 +1,21 @@
-com.example.cobalogin.app-jetified-firebase-common-20.3.3-0 C:\Users\meidi\.gradle\caches\transforms-3\1e4d47aa7ea3a1c36851281234dfd718\transformed\jetified-firebase-common-20.3.3\res
-com.example.cobalogin.app-jetified-window-1.0.0-beta04-1 C:\Users\meidi\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\res
-com.example.cobalogin.app-core-1.6.0-2 C:\Users\meidi\.gradle\caches\transforms-3\448e12895481b74f12aa96a40a56e1d8\transformed\core-1.6.0\res
+com.example.cobalogin.app-lifecycle-runtime-2.3.1-0 C:\Users\meidi\.gradle\caches\transforms-3\06c8f3ef5375cdb1bbb3d0a7ca39affa\transformed\lifecycle-runtime-2.3.1\res
+com.example.cobalogin.app-jetified-firebase-common-20.3.3-1 C:\Users\meidi\.gradle\caches\transforms-3\1e4d47aa7ea3a1c36851281234dfd718\transformed\jetified-firebase-common-20.3.3\res
+com.example.cobalogin.app-jetified-window-1.0.0-beta04-2 C:\Users\meidi\.gradle\caches\transforms-3\3547045148f823ae82ba5f00da62432e\transformed\jetified-window-1.0.0-beta04\res
 com.example.cobalogin.app-jetified-play-services-basement-18.1.0-3 C:\Users\meidi\.gradle\caches\transforms-3\45b55c87021c9ab508d82f4ad609d95c\transformed\jetified-play-services-basement-18.1.0\res
-com.example.cobalogin.app-browser-1.4.0-4 C:\Users\meidi\.gradle\caches\transforms-3\68e4604425ccccc8b72091daeabc9e65\transformed\browser-1.4.0\res
+com.example.cobalogin.app-core-1.10.1-4 C:\Users\meidi\.gradle\caches\transforms-3\7b906caf4d8efcde5ddcd72de25c4e2b\transformed\core-1.10.1\res
 com.example.cobalogin.app-jetified-play-services-base-18.0.1-5 C:\Users\meidi\.gradle\caches\transforms-3\9aacd92044d3c0fced5d96d094537c9f\transformed\jetified-play-services-base-18.0.1\res
-com.example.cobalogin.app-jetified-annotation-experimental-1.1.0-6 C:\Users\meidi\.gradle\caches\transforms-3\d5b68f2b2b74dc022302f312e278ba97\transformed\jetified-annotation-experimental-1.1.0\res
-com.example.cobalogin.app-jetified-window-java-1.0.0-beta04-7 C:\Users\meidi\.gradle\caches\transforms-3\e35e8dc727b74800fd8b576809d7e083\transformed\jetified-window-java-1.0.0-beta04\res
-com.example.cobalogin.app-debug-8 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\android\app\src\debug\res
-com.example.cobalogin.app-main-9 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\android\app\src\main\res
-com.example.cobalogin.app-google-services-10 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\generated\res\google-services\debug
-com.example.cobalogin.app-pngs-11 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\generated\res\pngs\debug
-com.example.cobalogin.app-resValues-12 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\generated\res\resValues\debug
-com.example.cobalogin.app-rs-13 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\generated\res\rs\debug
-com.example.cobalogin.app-mergeDebugResources-14 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
-com.example.cobalogin.app-mergeDebugResources-15 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
-com.example.cobalogin.app-merged_res-16 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\intermediates\merged_res\debug
-com.example.cobalogin.app-packaged_res-17 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\firebase_auth\intermediates\packaged_res\debug
-com.example.cobalogin.app-packaged_res-18 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\firebase_core\intermediates\packaged_res\debug
+com.example.cobalogin.app-browser-1.5.0-6 C:\Users\meidi\.gradle\caches\transforms-3\c02c06fd0ba1ce750dcd4463402ad761\transformed\browser-1.5.0\res
+com.example.cobalogin.app-jetified-annotation-experimental-1.3.0-7 C:\Users\meidi\.gradle\caches\transforms-3\e230ddc841c9052f64c39552e165ed39\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.cobalogin.app-jetified-window-java-1.0.0-beta04-8 C:\Users\meidi\.gradle\caches\transforms-3\e35e8dc727b74800fd8b576809d7e083\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.cobalogin.app-debug-9 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\android\app\src\debug\res
+com.example.cobalogin.app-main-10 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\android\app\src\main\res
+com.example.cobalogin.app-google-services-11 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\generated\res\google-services\debug
+com.example.cobalogin.app-pngs-12 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\generated\res\pngs\debug
+com.example.cobalogin.app-resValues-13 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\generated\res\resValues\debug
+com.example.cobalogin.app-rs-14 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\generated\res\rs\debug
+com.example.cobalogin.app-mergeDebugResources-15 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.cobalogin.app-mergeDebugResources-16 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.cobalogin.app-merged_res-17 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\app\intermediates\merged_res\debug
+com.example.cobalogin.app-packaged_res-18 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\firebase_auth\intermediates\packaged_res\debug
+com.example.cobalogin.app-packaged_res-19 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\firebase_core\intermediates\packaged_res\debug
+com.example.cobalogin.app-packaged_res-20 D:\KULIAH\Kuliah Smt 5\Pemrograman Aplikasi Mobile\Login Page - Kelompok\cobalogin\build\url_launcher_android\intermediates\packaged_res\debug
