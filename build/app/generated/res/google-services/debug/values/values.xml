@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">601945587551</string>
+    <string name="google_api_key" translatable="false">AIzaSyCt3lZl_qxbLSSrjoD9t73Bx5YwwhBewhQ</string>
+    <string name="google_app_id" translatable="false">1:601945587551:android:eb3941730f682ba77280ea</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCt3lZl_qxbLSSrjoD9t73Bx5YwwhBewhQ</string>
+    <string name="google_storage_bucket" translatable="false">coba-login-8a24c.appspot.com</string>
+    <string name="project_id" translatable="false">coba-login-8a24c</string>
+</resources>

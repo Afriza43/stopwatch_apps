@@ -17,187 +17,195 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Checkout",
+          style: TextStyle(
+            color: Colors.purple,
+            fontSize: 30,
+          ),
+        ),
+        backgroundColor: Colors.white,
+      ),
       body: SafeArea(
-          child: Column(
-        // mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Text(
-          //   "Signed In as : ${user.email}",
-          //   style: TextStyle(
-          //     fontSize: 20,
-          //   ),
-          // ),
-
-          Container(
-            padding: EdgeInsets.symmetric(vertical: 20),
-            // color: Colors.blue,
-            child: Row(
-              // mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                  // color: Colors.blue,
-
-                  width: 100,
-                  // height: 50,
-                  child: Image.asset('assets/melon_1.jpg'),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Container(
-                    // height: 50,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 20),
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Container(
+                    width: 100,
+                    child: Image.asset('assets/melon_1.jpg'),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Container(
                     child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Apel",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30,
-                      ),
-                    ),
-                    Text(
-                      "Tanpa pestisida berbahaya",
-                      style: TextStyle(fontSize: 17),
-                    ),
-                    SizedBox(
-                      height: 50,
-                    ),
-                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Rp 25.000",
-                          style: TextStyle(fontSize: 20),
+                          "Apel",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                          ),
+                        ),
+                        Text(
+                          "Tanpa pestisida berbahaya",
+                          style: TextStyle(fontSize: 17),
                         ),
                         SizedBox(
-                          width: 50,
+                          height: 50,
                         ),
-                        Container(
-                          height: 40,
-                          width: 40,
-                          decoration: BoxDecoration(
-                              border: Border.all(color: Colors.grey.shade400),
-                              borderRadius: BorderRadius.horizontal(
-                                  left: Radius.circular(8.0))),
-                          child: IconButton(
-                              color: Colors.blue,
-                              onPressed: () {
-                                setState(() {
-                                  jumlah++;
-                                  totalHarga = jumlah * harga;
-                                });
-                              },
-                              icon: Icon(Icons.add)),
+                        Row(
+                          children: [
+                            Text(
+                              "Rp 25.000",
+                              style: TextStyle(fontSize: 20),
+                            ),
+                            SizedBox(
+                              width: 50,
+                            ),
+                            Container(
+                              height: 40,
+                              width: 40,
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.grey.shade400),
+                                  borderRadius: BorderRadius.horizontal(
+                                      left: Radius.circular(8.0))),
+                              child: IconButton(
+                                color: Colors.purple,
+                                onPressed: () {
+                                  setState(() {
+                                    jumlah++;
+                                    totalHarga = jumlah * harga;
+                                  });
+                                },
+                                icon: Icon(Icons.add),
+                              ),
+                            ),
+                            Container(
+                              height: 40,
+                              width: 40,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey.shade400),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "${jumlah}",
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                              ),
+                            ),
+                            Container(
+                              height: 40,
+                              width: 40,
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.grey.shade400),
+                                  borderRadius: BorderRadius.horizontal(
+                                      right: Radius.circular(8.0))),
+                              child: IconButton(
+                                color: Colors.purple,
+                                onPressed: () {
+                                  setState(() {
+                                    if (jumlah > 0) {
+                                      jumlah--;
+                                      totalHarga = jumlah * harga;
+                                    }
+                                  });
+                                },
+                                icon: Icon(Icons.remove),
+                              ),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            SizedBox(height: 20.0),
+            Container(
+              padding: EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Center(
+                    child: Text(
+                      'Pembayaran',
+                      style: TextStyle(
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.purple,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  SizedBox(height: 40.0),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Jumlah Produk ",
+                          style: TextStyle(fontSize: 20),
                         ),
-                        Container(
-                          height: 40,
-                          width: 40,
-                          decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey.shade400),
-                          ),
-                          child: Center(
-                              child: Text(
-                            "${jumlah}",
-                            style: TextStyle(fontSize: 20),
-                          )),
-                        ),
-                        Container(
-                          height: 40,
-                          width: 40,
-                          decoration: BoxDecoration(
-                              border: Border.all(color: Colors.grey.shade400),
-                              borderRadius: BorderRadius.horizontal(
-                                  right: Radius.circular(8.0))),
-                          child: IconButton(
-                              color: Colors.blue,
-                              onPressed: () {
-                                setState(() {
-                                  jumlah--;
-                                  totalHarga = jumlah * harga;
-                                });
-                              },
-                              icon: Icon(Icons.remove)),
+                        Text(
+                          " ${jumlah}",
+                          style: TextStyle(fontSize: 20),
                         ),
                       ],
-                    )
-                  ],
-                ))
-              ],
-            ),
-          ),
-
-          SizedBox(height: 20.0), //Ini container output
-          Container(
-            padding: EdgeInsets.all(16.0),
-            //color: Colors.blue,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Center(
-                  child: Text(
-                    'Pembayaran',
-                    style: TextStyle(
-                      fontSize: 24.0,
-                      fontWeight: FontWeight.bold,
                     ),
-                    textAlign: TextAlign.center,
                   ),
-                ),
-                SizedBox(height: 40.0),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Jumlah Produk ",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      Text(
-                        " ${jumlah}",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                    ],
+                  SizedBox(height: 20.0),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Total Harga ",
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        Text(
+                          " ${totalHarga}",
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                SizedBox(height: 20.0),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Total Harga ",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      Text(
-                        " ${totalHarga}",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                    ],
+                  SizedBox(height: 50.0),
+                  Center(
+                    child: Image.asset(
+                      'assets/fruit.jpg', // Ubah path gambar sesuai dengan yang Anda miliki
+                      width: 300,
+                      height: 200,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-
-          SizedBox(
-            height: 40,
-          ),
-        ],
-      )),
-      //floating
+            SizedBox(
+              height: 40,
+            ),
+          ],
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           FirebaseAuth.instance.signOut();
         },
         child: Icon(Icons.logout),
-        backgroundColor:
-            Colors.red, // Atur warna latar belakang sesuai kebutuhan
+        backgroundColor: Colors.purpleAccent,
       ),
     );
   }
