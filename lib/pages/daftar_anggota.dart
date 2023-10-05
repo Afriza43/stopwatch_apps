@@ -20,7 +20,16 @@ class Anggota extends StatelessWidget {
                 child: Row(
                   children: [
                     CircleAvatar(
-                      child: FlutterLogo(),
+                      backgroundColor: Colors
+                          .transparent, // Atur latar belakang menjadi transparan
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/iza.jpg',
+                          fit: BoxFit.cover,
+                          width: 80.0,
+                          height: 80.0,
+                        ),
+                      ),
                       radius: 40.0,
                     ),
                     SizedBox(width: 20.0),
@@ -54,8 +63,16 @@ class Anggota extends StatelessWidget {
                 child: Row(
                   children: [
                     CircleAvatar(
-                      child: FlutterLogo(),
-                      radius: 40.0,
+                      backgroundColor: Colors.transparent,
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/saffanah.jpg',
+                          fit: BoxFit.cover,
+                          width: 80.0,
+                          height: 80.0,
+                        ),
+                      ),
+                      radius: 40.0, // Radius dari CircleAvatar
                     ),
                     SizedBox(width: 20.0),
                     Column(
@@ -88,7 +105,15 @@ class Anggota extends StatelessWidget {
                 child: Row(
                   children: [
                     CircleAvatar(
-                      child: FlutterLogo(),
+                      backgroundColor: Colors.transparent,
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/dio.jpg',
+                          fit: BoxFit.cover,
+                          width: 80.0,
+                          height: 80.0,
+                        ),
+                      ),
                       radius: 40.0,
                     ),
                     SizedBox(width: 20.0),

@@ -66,6 +66,9 @@ flutter:
     - assets/images/main_top.png
     - assets/images/login_bottom.png
     - assets/fruit.jpg
+    - assets/saffanah.jpg
+    - assets/iza.jpg
+    - assets/dio.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
