@@ -50,12 +50,12 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
 
-                SizedBox(
-                  height: 40,
+                Image.network(
+                  "https://i.pinimg.com/originals/a9/4b/b0/a94bb056522bc6443ff49898b95b02c6.png",
+                  width: 80,
                 ),
-
                 Text(
-                  "Fruit Shop",
+                  "KiwKiw",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 24,
