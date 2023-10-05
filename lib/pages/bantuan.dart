@@ -10,16 +10,106 @@ class BantuanPage extends StatelessWidget {
         title: Text('Bantuan'),
         backgroundColor: Colors.indigo[900],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+      body: Container(
+        child: Padding(
+          padding: EdgeInsets.all(30.0),
+          child: ListView(children: [
             Text(
-              'Ini adalah halaman bantuan',
-              style: TextStyle(fontSize: 24),
+              'Cara Penggunaan Aplikasi',
+              style: TextStyle(
+                fontSize: 25.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.indigo[900],
+              ),
+              textAlign: TextAlign.center,
             ),
-            SizedBox(height: 16),
-          ],
+            SizedBox(height: 20.0),
+            Text(
+              'Penggunaan Halaman Data Kelompok',
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Text(
+                  'Pada halaman data kelompok, pengguna dapat melihat data kelompok yang terdiri dari 3 orang. Data kelompok yang ditampilkan adalah nama, nim, dan foto anggota kelompok.',
+                  textAlign: TextAlign.justify,
+                ),
+              ),
+            ),
+            SizedBox(height: 20.0),
+            Text(
+              'Penggunaan Halaman Stopwatch',
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Text(
+                  'Pada halaman stopwatch, pengguna dapat melihat stopwatch yang berjalan. Pengguna dapat menekan tombol start untuk memulai stopwatch, tombol stop untuk menghentikan stopwatch, dan tombol reset untuk mengembalikan stopwatch ke 0.',
+                  textAlign: TextAlign.justify,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Text(
+              'Penggunaan Halaman Situs Rekomendasi',
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Text(
+                  'Pada Halaman Situs Rekomendasi, pengguna dapat melihat situs-situs rekomendasi yang ada di Bandung. Pengguna dapat menekan tombol love untuk menambahkan situs ke halaman favorit.',
+                  textAlign: TextAlign.justify,
+                ),
+              ),
+            ),
+            SizedBox(height: 20.0),
+            Text(
+              'Penggunaan Halaman Data Kelompok',
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Text(
+                  'Pada halaman data kelompok, pengguna dapat melihat data kelompok yang terdiri dari 3 orang. Data kelompok yang ditampilkan adalah nama, nim, dan foto anggota kelompok.',
+                  textAlign: TextAlign.justify,
+                ),
+              ),
+            ),
+          ]),
         ),
       ),
       floatingActionButton: FloatingActionButton(
